@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Proveedores - Sistema de Control de Inventario M.U.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Control de Inventario M.U.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Panel Principal</a></li>
+                <li><a href="registro_inventario.html">Registro de Inventario</a></li>
+                <li><a href="movimiento_inventario.html">Movimiento de Inventario</a></li>
+                <li><a href="alertas_stock_bajo.html">Alertas de Stock Bajo</a></li>
+                <li><a href="informes.html">Informes</a></li>
+                <li><a href="gestion_proveedores.html">Gestión de Proveedores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="flex-div">
+            <h2>Gestión de Proveedores</h2>
+            <div class="proveedores-section">
+                <h3>Agregar Nuevo Proveedor</h3>
+                <form class="proveedor-form">
+                    <div>
+                        <label for="nombre-proveedor">Nombre del Proveedor:</label>
+                        <input type="text" id="nombre-proveedor" name="nombre-proveedor" required>
+                    </div>
+                    <div>
+                        <label for="contacto">Persona de Contacto:</label>
+                        <input type="text" id="contacto" name="contacto" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="direccion">Dirección:</label>
+                        <textarea id="direccion" name="direccion" rows="3" required></textarea>
+                    </div>
+                    <div><button type="submit">Agregar Proveedor</button></div>
+                </form>
+        </div>
+        </div>
+        <br>
+        <div class="proveedores-section">
+            <h3>Lista de Proveedores</h3>
+            <table class="proveedores-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Contacto</th>
+                        <th>Teléfono</th>
+                        <th>Correo Electrónico</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Suministros Industriales S.A.</td>
+                        <td>Juan Pérez</td>
+                        <td>+56 2 2345 6789</td>
+                        <td>juan.perez@suministros.cl</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Herramientas del Norte Ltda.</td>
+                        <td>María González</td>
+                        <td>+56 2 9876 5432</td>
+                        <td>maria.gonzalez@herramientas.cl</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Maestranzas Unidos S.A. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

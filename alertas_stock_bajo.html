@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas de Stock Bajo - Sistema de Control de Inventario M.U.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Control de Inventario M.U.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Panel Principal</a></li>
+                <li><a href="registro_inventario.html">Registro de Inventario</a></li>
+                <li><a href="movimiento_inventario.html">Movimiento de Inventario</a></li>
+                <li><a href="alertas_stock_bajo.html">Alertas de Stock Bajo</a></li>
+                <li><a href="informes.html">Informes</a></li>
+                <li><a href="gestion_proveedores.html">Gestión de Proveedores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="flex-div">
+            <h2>Alertas de Stock Bajo</h2>
+            <table class="alertas-table">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre del Artículo</th>
+                        <th>Stock Actual</th>
+                        <th>Stock Mínimo</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ART001</td>
+                        <td>Tuerca M10</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td><button>Reordenar</button></td>
+                    </tr>
+                    <tr>
+                        <td>ART002</td>
+                        <td>Perno 1/2"</td>
+                        <td>25</td>
+                        <td>75</td>
+                        <td><button>Reordenar</button></td>
+                    </tr>
+                    <tr>
+                        <td>ART003</td>
+                        <td>Arandela 3/8"</td>
+                        <td>30</td>
+                        <td>150</td>
+                        <td><button>Reordenar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Maestranzas Unidos S.A. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

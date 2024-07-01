@@ -21,33 +21,42 @@
         </nav>
     </header>
     <main>
-        <h2>Registro de Inventario</h2>
-        <form class="inventory-form">
-            <label for="nombre-articulo">Nombre del Artículo:</label>
-            <input type="text" id="nombre-articulo" name="nombre-articulo" required>
-
-            <label for="codigo-articulo">Código del Artículo:</label>
-            <input type="text" id="codigo-articulo" name="codigo-articulo" required>
-
-            <label for="categoria">Categoría:</label>
-            <select id="categoria" name="categoria">
-                <option value="">Seleccione una categoría</option>
-                <option value="herramientas">Herramientas</option>
-                <option value="repuestos">Repuestos</option>
-                <option value="materiales">Materiales</option>
-            </select>
-
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" min="0" required>
-
-            <label for="precio-unitario">Precio Unitario:</label>
-            <input type="number" id="precio-unitario" name="precio-unitario" min="0" step="0.01" required>
-
-            <label for="proveedor">Proveedor:</label>
-            <input type="text" id="proveedor" name="proveedor">
-
-            <button type="submit">Registrar Artículo</button>
-        </form>
+        <div class="flex-div">
+            <h2>Registro de Inventario</h2>
+            <form class="inventory-form">
+                <div>
+                    <label for="nombre-articulo">Nombre del Artículo:</label>
+                    <input type="text" id="nombre-articulo" name="nombre-articulo" required>
+                </div>
+            
+                <div>
+                    <label for="codigo-articulo">Código del Artículo:</label>
+                    <input type="text" id="codigo-articulo" name="codigo-articulo" required>
+                </div>
+                <div>
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="">Seleccione una categoría</option>
+                        <option value="herramientas">Herramientas</option>
+                        <option value="repuestos">Repuestos</option>
+                        <option value="materiales">Materiales</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="0" required>
+                </div>
+                <div>
+                    <label for="precio-unitario">Precio Unitario:</label>
+                    <input type="number" id="precio-unitario" name="precio-unitario" min="0" step="0.01" required>
+                </div>
+                <div>
+                    <label for="proveedor">Proveedor:</label>
+                    <input type="text" id="proveedor" name="proveedor">
+                </div>
+                <button type="submit">Registrar Artículo</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Maestranzas Unidos S.A. Todos los derechos reservados.</p>
